@@ -1,4 +1,10 @@
 t = int(input())
-for i in range(1, t+1):
+ans = []
+for i in range(1, int(t**(1/2))+1):
     if t%i == 0:
-        print(i, end=' ')
+        ans.append(i)
+        if (i**2) != t:
+            ans.append(t//i)
+
+ans.sort()
+print(*ans)
