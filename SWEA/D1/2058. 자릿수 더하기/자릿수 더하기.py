@@ -1,2 +1,2 @@
-T = map(int, input())
-print(sum(T))
+T = input()
+print(sum([int(i) for i in T]))
